@@ -1,9 +1,11 @@
 import './App.css';
+import Router from './Router';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-    </div>
+    <>
+      <Router />
+    </>
   );
 }
 

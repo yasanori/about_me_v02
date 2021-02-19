@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Top = () => {
+function Header() {
   return (
     <div>
-      <h1>Top</h1>
+
     </div>
   )
 }
 
-export default Top
+export default Header
