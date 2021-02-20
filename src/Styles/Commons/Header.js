@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
+
+import { FONT_SIZE } from '../StyleContents';
 import { BaseLink } from '../Base';
 
-import { Link } from 'react-router-dom';
 
 export const HeaderWrapper = styled.div`
   height: 7rem;
@@ -14,7 +16,7 @@ export const HeaderWrapper = styled.div`
 `
 
 export const HeaderTitle = styled(BaseLink.withComponent(Link))`
-  font-size: 3rem;
+  font-size: ${FONT_SIZE.HEADER_TITLE};
   line-height: 3rem;
 `;
 
@@ -31,5 +33,5 @@ export const HeaderList = styled.li`
 `
 
 export const HeaderNavLink = styled(BaseLink.withComponent(Link))`
-  font-size: 1.4rem;
+  font-size: ${FONT_SIZE.HEADER_NAV};
 `;
