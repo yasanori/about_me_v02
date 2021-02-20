@@ -1,10 +1,9 @@
 import React from 'react'
+import MainImage from '../Components/Presentations/Tops/MainImage'
 
 const Top = () => {
   return (
-    <div>
-      <h1>Top</h1>
-    </div>
+    <MainImage />
   )
 }
 
