@@ -8,16 +8,16 @@ export const AboutMePageWrapper = styled.main`
 
 `
 export const ProfileWrapper = styled.section`
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10% 15%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10% 15%;
 `
 
 export const Profiles = styled.div`
-    box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
-    padding: 5% 0;
+  padding: 5% 0;
   justify-content: space-between;
 `
 
@@ -28,5 +28,4 @@ export const ProfileLists = styled.ul`
 export const ProfileList = styled.li`
   ${TEXT_BASE}
   font-size: 0.8rem;
-  font-weight: 300;
 `

@@ -5,6 +5,7 @@ export const TEXT_BASE = `
   text-align: left;
   color: ${COLORS.FONT_MAIN};
   font-weight: normal;
+  font-weight: 300;
 `
 
 export const SubTitle = styled.h2`
