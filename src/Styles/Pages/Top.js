@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import { COLORS } from '../StyleContents';
+import { COLORS, PAGE_WRAPPER } from '../StyleContents';
 
+export const TopPageWrapper = styled.main`
+width: PAGE_WRAPPER.WIDTH;
+`
 
 export const MainImageWrapper = styled.div`
   width: 100%;
@@ -26,4 +29,10 @@ export const MeImage = styled.img`
   object-fit: cover;
   border: 2px solid ${COLORS.MAIN};
   margin-right: 7%;
+`
+
+export const ServiceWrapper = styled.section`
+  width: 100%;
+  padding: 5rem 15%;
+  box-sizing: border-box;
 `
