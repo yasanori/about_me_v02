@@ -10,5 +10,10 @@ export const FONT_SIZE = {
   HEADER_TITLE: '3rem',
   HEADER_NAV: '1.4rem',
   TITLE: '3.2rem',
-  SUBTITLE: '2.4rem',
+  SUBTITLE: '3.0rem',
+  MINITITLE: '2rem'
+}
+
+export const PAGE_WRAPPER = {
+  WIDTH: '100vw',
 }

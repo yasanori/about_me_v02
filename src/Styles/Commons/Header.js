@@ -18,6 +18,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderTitle = styled(BaseLink.withComponent(Link))`
   font-size: ${FONT_SIZE.HEADER_TITLE};
   line-height: 3rem;
+    font-weight: 200;
 `;
 
 export const HeaderNavWrapper = styled.nav`

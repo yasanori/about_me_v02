@@ -7,6 +7,7 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
 body{
   ${reset}
+  background-color: #FFFFFB;
   font-size: 62.5%;
   box-sizing: border-box;
 }
