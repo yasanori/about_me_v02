@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { COLORS, PAGE_WRAPPER } from '../StyleContents';
+import { TEXT_BASE } from '../Text';
 
 export const TopPageWrapper = styled.main`
-width: PAGE_WRAPPER.WIDTH;
+width: ${PAGE_WRAPPER.WIDTH};
 `
 
 export const MainImageWrapper = styled.div`
+  box-sizing: border-box;
   width: 100%;
   height: 34rem;
   display: flex;
@@ -32,7 +34,45 @@ export const MeImage = styled.img`
 `
 
 export const ServiceWrapper = styled.section`
+  box-sizing: border-box;
   width: 100%;
   padding: 5rem 15%;
   box-sizing: border-box;
+`
+
+export const ServiceContents = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`
+export const ServiceContentWrapper = styled.div`
+  box-sizing: border-box;
+  width: 20%;
+  border: 2px solid ${COLORS.MAIN};
+  border-radius: 10%;
+  padding: 1rem;
+`
+
+export const ServiceImage = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+`
+
+export const ServiceContentTitle = styled.h4`
+  ${TEXT_BASE}
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 2rem;
+  color: ${COLORS.MAIN};
+`
+
+export const ServiceDescription = styled.p`
+  ${TEXT_BASE}
+  font-size: 1rem;
 `
