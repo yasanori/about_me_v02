@@ -11,20 +11,23 @@ import SmileImage from '../../../images/smile.png'
 
 const Service = () => {
 
-  const Servicees = {
-    desine: {
+  const Services = [
+    {
+      image: DesignImage,
       title: "desine",
       description: "デザインします。"
     },
-    programing: {
+    {
+      image: CodingImage,
       title: "programing",
-      description: "アプリ開発、web制作できます。"
+      description: "アプリ開発、web制作がんばります。"
     },
-    smile: {
+    {
+      image: SmileImage,
       title: "smaile",
       description: "0円です。"
-    },
-  }
+    }
+  ]
 
   return (
     <ServiceWrapper>
@@ -32,9 +35,16 @@ const Service = () => {
         Service
       </SubTitle>
       <ServiceContents>
-        <ServiceContent />
-        <ServiceContent />
-        <ServiceContent />
+        {
+          Services.map((service, i) =>
+            <ServiceContent
+              key={i}
+              image={service.image}
+              title={service.title}
+              description={service.description}
+            />
+          )
+        }
       </ServiceContents>
     </ServiceWrapper>
   )

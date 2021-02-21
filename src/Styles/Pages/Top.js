@@ -43,21 +43,24 @@ export const ServiceWrapper = styled.section`
 export const ServiceContents = styled.div`
   box-sizing: border-box;
   width: 100%;
-  padding: 10%;
+  padding: 10% 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 `
 export const ServiceContentWrapper = styled.div`
   box-sizing: border-box;
-  width: 20%;
+  width: 22%;
+  height: 27rem;
   border: 2px solid ${COLORS.MAIN};
-  border-radius: 10%;
+  border-radius: 2%;
   padding: 1rem;
 `
 
 export const ServiceImage = styled.img`
+  box-sizing: border-box;
   width: 100%;
+  padding: 5px 1rem;
   height: auto;
   border-radius: 10%;
   object-fit: cover;
@@ -68,7 +71,7 @@ export const ServiceContentTitle = styled.h4`
   font-size: 1.6rem;
   text-align: center;
   letter-spacing: 5px;
-  line-height: 2rem;
+  line-height: 4rem;
   color: ${COLORS.MAIN};
 `
 

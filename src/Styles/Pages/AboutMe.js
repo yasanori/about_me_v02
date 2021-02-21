@@ -27,5 +27,5 @@ export const ProfileLists = styled.ul`
 
 export const ProfileList = styled.li`
   ${TEXT_BASE}
-  font-size: 0.8rem;
+  font-size: 1rem;
 `

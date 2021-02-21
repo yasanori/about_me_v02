@@ -21,7 +21,7 @@ const AboutMe = () => {
               生年月日　:　1995-06-18
             </ProfileList>
             <ProfileList>
-              所在地　　:　都京都内
+              所在地　　:　東京都内
             </ProfileList>
             <ProfileList>
               お問い合わせ:　msnr.nagao@gmail.com
