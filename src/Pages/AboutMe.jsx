@@ -1,6 +1,11 @@
 import React from 'react'
 import { SubTitle, MiniTitle } from '../Styles/Text'
-import { AboutMePageWrapper, ProfileWrapper, Profiles, ProfileLists, ProfileList } from '../Styles/Pages/AboutMe'
+import { AboutMePageWrapper, ProfileWrapper, Profiles, ProfileLists, ProfileList, SnsIconLists, SnsIconList, SnsIconImage } from '../Styles/Pages/AboutMe'
+
+import TwitterIcon from '../images/twitter.png'
+import InstaramIcon from '../images/instagram.png'
+import FacebookIcon from '../images/facebook.png'
+import GithubIcon from '../images/github.png'
 
 const AboutMe = () => {
   return (
@@ -68,6 +73,11 @@ const AboutMe = () => {
             </ProfileList>
           </ProfileLists>
         </Profiles>
+        <SnsIconLists>
+          <SnsIconList>
+            <SnsIconImage src={TwitterIcon} />
+          </SnsIconList>
+        </SnsIconLists>
       </ProfileWrapper>
     </AboutMePageWrapper>
   )

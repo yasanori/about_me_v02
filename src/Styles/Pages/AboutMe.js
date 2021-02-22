@@ -29,3 +29,17 @@ export const ProfileList = styled.li`
   ${TEXT_BASE}
   font-size: 1rem;
 `
+export const SnsIconLists = styled.ul`
+  display: flex;
+`
+
+export const SnsIconList = styled.li`
+  width : 20%;
+`
+
+export const SnsIconImage = styled.img`
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+`
