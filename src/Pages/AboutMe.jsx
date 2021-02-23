@@ -1,13 +1,25 @@
 import React from 'react'
+import Profiles from '../Components/Presentations/AboutMe/Profiles';
+import SnsIconLists from '../Components/Presentations/AboutMe/SnsIconLists';
+
 import { SubTitle, MiniTitle } from '../Styles/Text'
-import { AboutMePageWrapper, ProfileWrapper, Profiles, ProfileLists, ProfileList, SnsIconLists, SnsIconList, SnsIconImage } from '../Styles/Pages/AboutMe'
+import { AboutMePageWrapper, ProfileWrapper } from '../Styles/Pages/AboutMe'
+
 
 import TwitterIcon from '../images/twitter.png'
 import InstaramIcon from '../images/instagram.png'
 import FacebookIcon from '../images/facebook.png'
 import GithubIcon from '../images/github.png'
 
+
 const AboutMe = () => {
+
+  const SnsDetas = [
+    { icon: TwitterIcon, url: '' },
+    { icon: FacebookIcon, url: '' },
+    { icon: GithubIcon, url: 'https://github.com/yasanori' },
+  ]
+
   return (
     <AboutMePageWrapper>
       <SubTitle>
@@ -17,67 +29,8 @@ const AboutMe = () => {
         <MiniTitle>
           Profile
         </MiniTitle>
-        <Profiles>
-          <ProfileLists>
-            <ProfileList>
-              名前　　　:　永尾 優典
-            </ProfileList>
-            <ProfileList>
-              生年月日　:　1995-06-18
-            </ProfileList>
-            <ProfileList>
-              所在地　　:　東京都内
-            </ProfileList>
-            <ProfileList>
-              お問い合わせ:　msnr.nagao@gmail.com
-            </ProfileList>
-            <ProfileList>
-              スキル：　　<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Ruby&nbsp;/&nbsp;Ruby on Rails<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              JavaScript&nbsp;<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              React&nbsp;/&nbsp;Redux<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              HTML5&nbsp;/&nbsp;CSS3<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              デザイン&nbsp;/&nbsp;フォトグラフ<br />
-            </ProfileList>
-          </ProfileLists>
-          <ProfileLists>
-            <ProfileList>
-              name　 : Masanori Nagao
-            </ProfileList>
-            <ProfileList>
-              birthday: 1995-06-18
-            </ProfileList>
-            <ProfileList>
-              location : Tokyo, Japan
-            </ProfileList>
-            <ProfileList>
-              mail :　msnr.nagao@gmail.com
-            </ProfileList>
-            <ProfileList>
-              skill：　　<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Ruby&nbsp;/&nbsp;Ruby on Rails<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              JavaScript&nbsp;<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              React&nbsp;/&nbsp;Redux<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              HTML5&nbsp;/&nbsp;CSS3<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              design&nbsp;/&nbsp;photograph<br />
-            </ProfileList>
-          </ProfileLists>
-        </Profiles>
-        <SnsIconLists>
-          <SnsIconList>
-            <SnsIconImage src={TwitterIcon} />
-          </SnsIconList>
-        </SnsIconLists>
+        <Profiles />
+        <SnsIconLists SnsDetas={SnsDetas} />
       </ProfileWrapper>
     </AboutMePageWrapper>
   )

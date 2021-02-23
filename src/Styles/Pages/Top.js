@@ -37,7 +37,6 @@ export const ServiceWrapper = styled.section`
   box-sizing: border-box;
   width: 100%;
   padding: 5rem 15%;
-  box-sizing: border-box;
 `
 
 export const ServiceContents = styled.div`

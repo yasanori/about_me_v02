@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { COLORS, FONT_SIZE, PAGE_WRAPPER } from '../StyleContents';
 import { TEXT_BASE } from '../Text';
+import { LINK_BASE } from '../Link';
 
 export const AboutMePageWrapper = styled.main`
   width: PAGE_WRAPPER.WIDTH;
@@ -13,7 +14,7 @@ export const ProfileWrapper = styled.section`
   padding: 10% 15%;
 `
 
-export const Profiles = styled.div`
+export const ProfilesStyle = styled.div`
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -22,19 +23,25 @@ export const Profiles = styled.div`
 `
 
 export const ProfileLists = styled.ul`
-
 `
 
 export const ProfileList = styled.li`
   ${TEXT_BASE}
   font-size: 1rem;
 `
-export const SnsIconLists = styled.ul`
+export const SnsIconListsStyle = styled.ul`
+width: 100%;
   display: flex;
+  justify-content: flex-end;
 `
 
 export const SnsIconList = styled.li`
-  width : 20%;
+  width : 7%;
+  margin: 1%;
+`
+
+export const SnsIconLink = styled.a`
+  ${LINK_BASE}
 `
 
 export const SnsIconImage = styled.img`
@@ -42,4 +49,7 @@ export const SnsIconImage = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
+  &:hover{
+    opacity: 0.3;
+  }
 `
