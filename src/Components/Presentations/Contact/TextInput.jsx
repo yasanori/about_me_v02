@@ -4,9 +4,7 @@ import { useForm } from 'react-hook-form';
 import TextField from '@material-ui/core/TextField';
 
 const TextInput = (props) => {
-  console.log(props)
   const { register, errors } = useForm()
-  const handleChange = (errors) => console.log(errors)
   return (
     <TextField
       name={props.name}
@@ -16,10 +14,9 @@ const TextInput = (props) => {
       multiline={props.multiline}
       rows={props.rows}
       // fullWidth
-      // onChange={() => handleChange(errors)}
       inputRef={props.register}
       error={Boolean(props.errors)}
-      helperText={props.errors && "恐縮ですが必須項目です。"}
+      helperText={props.errors && "必須項目です"}
     />
   )
 }

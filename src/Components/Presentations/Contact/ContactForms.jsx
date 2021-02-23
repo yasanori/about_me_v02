@@ -10,7 +10,6 @@ const ContactForms = () => {
 
   const { register, handleSubmit, errors } = useForm()
 
-  const valid = register({ required: true })
 
   const Properties = [
     {
@@ -22,7 +21,27 @@ const ContactForms = () => {
       rows: 1,
       register: register({ required: true }),
       errors: errors.name
-    }
+    },
+    {
+      name: "email",
+      label: "Email",
+      type: "email",
+      variant: "standard",
+      multiline: false,
+      rows: 1,
+      register: register({ required: true }),
+      errors: errors.email
+    },
+    {
+      name: "text",
+      label: "text",
+      type: "text",
+      variant: "outlined",
+      multiline: true,
+      rows: 5,
+      register: register({ required: true }),
+      errors: errors.text
+    },
   ]
 
 
