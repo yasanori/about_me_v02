@@ -1,10 +1,18 @@
 import React from 'react'
+import { WorkPageWrapper, CommingText } from '../Styles/Pages/Work'
+
+import { SubTitle, MiniTitle } from '../Styles/Text'
 
 const Work = () => {
   return (
-    <div>
-      <h1>Work</h1>
-    </div>
+    <WorkPageWrapper>
+      <SubTitle>
+        Work
+      </SubTitle>
+      <CommingText>
+        Comming soon
+</CommingText>
+    </WorkPageWrapper>
   )
 }
 
