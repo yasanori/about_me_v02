@@ -15,8 +15,8 @@ import GithubIcon from '../images/github.png'
 const AboutMe = () => {
 
   const SnsDetas = [
-    { icon: TwitterIcon, url: '' },
-    { icon: FacebookIcon, url: '' },
+    { icon: TwitterIcon, url: 'https://twitter.com/___yu_suke___' },
+    { icon: FacebookIcon, url: 'https://www.facebook.com/masanori.nagao.12' },
     { icon: GithubIcon, url: 'https://github.com/yasanori' },
   ]
 
