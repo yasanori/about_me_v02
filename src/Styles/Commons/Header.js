@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
 import { FONT_SIZE } from '../StyleContents';
-import { BaseLink } from '../Base';
+import { LINK_BASE } from '../Link';
 
 
 export const HeaderWrapper = styled.div`
@@ -15,7 +15,15 @@ export const HeaderWrapper = styled.div`
   box-sizing: border-box;
 `
 
-export const HeaderTitle = styled(BaseLink.withComponent(Link))`
+export const HeaderBaseLink = styled.a`
+  ${LINK_BASE}
+  font-size: FONT_SIZE.HEADER_NAV;
+  &:hover{
+    border-bottom: solid 1px #BDC0BA;
+  }
+`
+
+export const HeaderTitle = styled(HeaderBaseLink.withComponent(Link))`
   font-size: ${FONT_SIZE.HEADER_TITLE};
   line-height: 3rem;
     font-weight: 200;
@@ -33,6 +41,6 @@ export const HeaderLists = styled.ul`
 export const HeaderList = styled.li`
 `
 
-export const HeaderNavLink = styled(BaseLink.withComponent(Link))`
+export const HeaderNavLink = styled(HeaderBaseLink.withComponent(Link))`
   font-size: ${FONT_SIZE.HEADER_NAV};
 `;
