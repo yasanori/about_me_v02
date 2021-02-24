@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TextInput from './TextInput'
 
-import TextField from '@material-ui/core/TextField';
 import { useForm } from 'react-hook-form';
 import Button from '@material-ui/core/Button';
 
@@ -20,7 +19,8 @@ const ContactForms = () => {
       multiline: false,
       rows: 1,
       register: register({ required: true }),
-      errors: errors.name
+      errors: errors.name,
+      errorMessage: "必須項目です。"
     },
     {
       name: "email",
@@ -30,7 +30,8 @@ const ContactForms = () => {
       multiline: false,
       rows: 1,
       register: register({ required: true }),
-      errors: errors.email
+      errors: errors.email,
+      errorMessage: "必須項目です。"
     },
     {
       name: "text",
@@ -40,7 +41,8 @@ const ContactForms = () => {
       multiline: true,
       rows: 5,
       register: register({ required: true }),
-      errors: errors.text
+      errors: errors.text,
+      errorMessage: "必須項目です。"
     },
   ]
 
@@ -53,7 +55,6 @@ const ContactForms = () => {
     <form onSubmit={handleSubmit(submitForm)}>
       {
         Properties.map((property, i) =>
-
           <TextInput
             key={i}
             name={property.name}
@@ -65,6 +66,7 @@ const ContactForms = () => {
             // fullWidth
             register={property.register}
             errors={property.errors}
+            errorMessage={property.errorMessage}
           />
         )}
       <Button type="submit">
