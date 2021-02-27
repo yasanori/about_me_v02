@@ -50,7 +50,6 @@ export const ServiceContents = styled.div`
 export const ServiceContentWrapper = styled.div`
   box-sizing: border-box;
   width: 22%;
-  height: 27rem;
   border: 2px solid ${COLORS.MAIN};
   border-radius: 2%;
   padding: 1rem;

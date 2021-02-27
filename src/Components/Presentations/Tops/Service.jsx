@@ -15,17 +15,17 @@ const Service = () => {
     {
       image: DesignImage,
       title: "desine",
-      description: "デザインします。"
+      description: ""
     },
     {
       image: CodingImage,
       title: "programing",
-      description: "アプリ開発、web制作がんばります。"
+      description: ""
     },
     {
       image: SmileImage,
       title: "smaile",
-      description: "0円です。"
+      description: ""
     }
   ]
 

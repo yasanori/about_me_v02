@@ -4,10 +4,11 @@ import { TEXT_BASE } from '../Text';
 import { LINK_BASE } from '../Link';
 
 export const AboutMePageWrapper = styled.main`
-  width: PAGE_WRAPPER.WIDTH;
+  box-sizing: border-box;
+  width: ${PAGE_WRAPPER.WIDTH};
   padding: 10% 25%;
-
 `
+
 export const ProfileWrapper = styled.section`
   box-sizing: border-box;
   width: 100%;

@@ -3,6 +3,9 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField';
 
 const TextInput = (props) => {
+  const margin = {
+    margin: 2 + "%"
+  }
   return (
     <TextField
       name={props.name}
@@ -15,6 +18,7 @@ const TextInput = (props) => {
       inputRef={props.register}
       error={Boolean(props.errors)}
       helperText={props.errors && props.errorMessage}
+      style={margin}
     />
   )
 }
