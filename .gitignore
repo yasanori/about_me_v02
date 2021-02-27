@@ -11,7 +11,8 @@
 # production
 /build
 
-/functions/.runtimeconfig
+functions/
+.runtimeconfig
 
 # misc
 .DS_Store
