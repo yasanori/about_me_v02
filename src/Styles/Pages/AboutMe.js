@@ -2,17 +2,29 @@ import styled from 'styled-components';
 import { COLORS, FONT_SIZE, PAGE_WRAPPER } from '../StyleContents';
 import { TEXT_BASE } from '../Text';
 import { LINK_BASE } from '../Link';
+import { sp, pc } from '../../Styles/media';
 
 export const AboutMePageWrapper = styled.main`
   box-sizing: border-box;
   width: ${PAGE_WRAPPER.WIDTH};
+
+      ${pc`
   padding: 10% 25%;
+`}
+${sp`
+  padding: 10% 0;
+`}
 `
 
 export const ProfileWrapper = styled.section`
   box-sizing: border-box;
   width: 100%;
   padding: 10% 15%;
+  ${pc`
+  `}
+  ${sp`
+      margin: 5% 0;
+  `}
 `
 
 export const ProfilesStyle = styled.div`
@@ -20,10 +32,24 @@ export const ProfilesStyle = styled.div`
   width: 100%;
   display: flex;
   padding: 5% 0;
-  justify-content: space-between;
+  ${pc`
+      justify-content: space-between;
+  `}
+  ${sp`
+      flex-direction: column;
+  `}
 `
 
 export const ProfileLists = styled.ul`
+  ${pc`
+  `}
+  ${sp`
+      padding: 10% 0;
+      line-height: 1.6rem;
+      :first-child{
+        border-bottom: 1px solid ${COLORS.MAIN};
+      }
+  `}
 `
 
 export const ProfileList = styled.li`
