@@ -44,6 +44,7 @@ export const HeaderNavWrapper = styled.nav`
   ${sp`
     text-align: center;
     opacity: 0.6;
+    margin-top: 5%;
   `}
 
 `
