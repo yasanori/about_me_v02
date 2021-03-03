@@ -12,14 +12,14 @@ export const MainImageWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-      ${pc`
-        height: 34rem;
-        justify-content: flex-end;
-    `}
-        ${sp`
-        height: 25rem;
-        justify-content: center;
-    `}
+  ${pc`
+    height: 34rem;
+    justify-content: flex-end;
+`}
+    ${sp`
+    height: 23rem;
+    justify-content: center;
+`}
 `
 
 export const MainImageContent = styled.img`
@@ -43,29 +43,45 @@ export const MeImage = styled.img`
     ${sp`
       margin-right: 0;
     `}
-
 `
 
 export const ServiceWrapper = styled.section`
   box-sizing: border-box;
   width: 100%;
-  padding: 5rem 15%;
+  ${pc`
+    padding: 5rem 15%;
+  `}
+  ${sp`
+    padding: 5%;
+  `}
 `
 
 export const ServiceContents = styled.div`
   box-sizing: border-box;
   width: 100%;
-  padding: 10% 0;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  ${pc`
+    padding: 10% 0;
+    justify-content: space-around;
+  `}
+  ${sp`
+      padding: 15%;
+    flex-direction: column;
+  `}
 `
 export const ServiceContentWrapper = styled.div`
   box-sizing: border-box;
-  width: 22%;
   border: 2px solid ${COLORS.MAIN};
   border-radius: 2%;
-  padding: 1rem;
+  padding: 10%;
+  ${pc`
+    width: 22%;
+  `}
+  ${sp`
+      width: 100%;
+      margin: 10%;
+  `}
 `
 
 export const ServiceImage = styled.img`
