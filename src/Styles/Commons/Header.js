@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FONT_SIZE } from '../StyleContents';
 import { LINK_BASE } from '../Link';
 
-import { sp, pc } from '../../Styles/media';;
+import { sp, pc } from '../../Styles/media';
 
 
 export const HeaderWrapper = styled.div`
