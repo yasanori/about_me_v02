@@ -15,11 +15,11 @@ export const MainImageWrapper = styled.div`
   ${pc`
     height: 34rem;
     justify-content: flex-end;
-`}
+  `}
     ${sp`
     height: 23rem;
     justify-content: center;
-`}
+  `}
 `
 
 export const MainImageContent = styled.img`
@@ -37,12 +37,12 @@ export const MeImage = styled.img`
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid ${COLORS.MAIN};
-    ${pc`
-      margin-right: 7%;
-    `}
-    ${sp`
-      margin-right: 0;
-    `}
+  ${pc`
+    margin-right: 7%;
+  `}
+  ${sp`
+    margin-right: 0;
+  `}
 `
 
 export const ServiceWrapper = styled.section`
@@ -66,7 +66,7 @@ export const ServiceContents = styled.div`
     justify-content: space-around;
   `}
   ${sp`
-      padding: 15%;
+    padding: 15%;
     flex-direction: column;
   `}
 `
@@ -74,13 +74,14 @@ export const ServiceContentWrapper = styled.div`
   box-sizing: border-box;
   border: 2px solid ${COLORS.MAIN};
   border-radius: 2%;
-  padding: 10%;
   ${pc`
     width: 22%;
+    padding: 1rem;
   `}
   ${sp`
-      width: 100%;
-      margin: 10%;
+    width: 100%;
+    margin: 10%;
+    padding: 10%;
   `}
 `
 
