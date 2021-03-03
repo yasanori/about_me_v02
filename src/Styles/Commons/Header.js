@@ -38,7 +38,14 @@ export const HeaderTitle = styled(HeaderBaseLink.withComponent(Link))`
 `;
 
 export const HeaderNavWrapper = styled.nav`
-width: 30%;
+  ${pc`
+    width: 30%;
+  `}
+  ${sp`
+    text-align: center;
+    opacity: 0.6;
+  `}
+
 `
 
 export const HeaderLists = styled.ul`
