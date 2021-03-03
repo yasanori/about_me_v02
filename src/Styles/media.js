@@ -4,11 +4,17 @@ import {
 
 export const MEDIA_MAX_WIDTH = {
   SP: 560,
-  TB: 1024
+  PC: 1024
 }
 
 export const sp = (first, ...interpolations) => css`
-    @media (min-width: ${MEDIA_MAX_WIDTH.SP}px) {
+    @media (max-width: ${MEDIA_MAX_WIDTH.SP}px) {
+        ${css(first, ...interpolations)}
+    }
+`;
+
+export const pc = (first, ...interpolations) => css`
+    @media (min-width: ${MEDIA_MAX_WIDTH.PC}px) {
         ${css(first, ...interpolations)}
     }
 `;

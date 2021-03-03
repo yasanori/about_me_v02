@@ -4,15 +4,23 @@ import { Link } from 'react-router-dom';
 import { FONT_SIZE } from '../StyleContents';
 import { LINK_BASE } from '../Link';
 
+import { sp, pc } from '../../Styles/media';;
+
 
 export const HeaderWrapper = styled.div`
   height: 7rem;
   width: 100vw;
-  padding: 1rem 10rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 1rem 0;
   box-sizing: border-box;
+  ${pc`
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  `}
+  ${sp`
+    text-align: center;
+    `}
 `
 
 export const HeaderBaseLink = styled.a`

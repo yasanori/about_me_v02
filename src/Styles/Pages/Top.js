@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { COLORS, PAGE_WRAPPER } from '../StyleContents';
 import { TEXT_BASE } from '../Text';
+import { sp, pc } from '../../Styles/media';
 
 export const TopPageWrapper = styled.main`
 width: ${PAGE_WRAPPER.WIDTH};
@@ -9,10 +10,16 @@ width: ${PAGE_WRAPPER.WIDTH};
 export const MainImageWrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
-  height: 34rem;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+      ${pc`
+        height: 34rem;
+        justify-content: flex-end;
+    `}
+        ${sp`
+        height: 25rem;
+        justify-content: center;
+    `}
 `
 
 export const MainImageContent = styled.img`
@@ -30,7 +37,13 @@ export const MeImage = styled.img`
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid ${COLORS.MAIN};
-  margin-right: 7%;
+    ${pc`
+      margin-right: 7%;
+    `}
+    ${sp`
+      margin-right: 0;
+    `}
+
 `
 
 export const ServiceWrapper = styled.section`
